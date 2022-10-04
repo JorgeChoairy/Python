@@ -165,8 +165,8 @@ informado.
 
 print("Digite um número qualquer e receba ele invertido - Machine")
 
-n = int(input("O número digitado é: "))
+def reverte(numero):
+    return str(numero[::-1])
 
-n = str(n)
-
-print(n[::-1])
+numero = str(input("Digite um número qualquer: ")).strip()
+print(f"O reverso do seu número é: {reverte(numero)}")
